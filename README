@@ -1,0 +1,7 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=345
+
+Under utf-8, characters 128 and over become multi-byte. Therefore, under  Vim 6.1 or earlier, they should not be used for the option values in 'listchars'. This script takes care of the "eol:" sub-option, the only one which gave me problems. If you use characters >= 128 for other sub-options, similar scripts can easily be written (based on this one) to take care of them.
+
+This script has intentionally been abundantly commented to make it understandable.
+
+See vimtip#246 for a related tip.
